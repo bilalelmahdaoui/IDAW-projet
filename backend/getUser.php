@@ -1,8 +1,8 @@
 <?php
 require_once('config.php');
 
-if (isset($_GET['login'])) {
-  $login = $_GET['login'];
+if (isset($_POST['login'])) {
+  $login = $_POST['login'];
 }
 
 $requete = "SELECT * FROM Utilisateur WHERE login='${login}';";

@@ -8332,3 +8332,24 @@ h1, h2, h3, h4, h5,
     @media (max-width: 767.98px) {
       .form-group .submit {
         top: 0; } }
+
+/* ---*/
+
+.crud-icon {
+  height: 30px;
+}
+
+.tab-subtitle {
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.form-container {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+th, td {
+  vertical-align: middle !important;
+  text-align: center;
+}

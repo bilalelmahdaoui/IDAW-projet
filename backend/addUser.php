@@ -1,20 +1,20 @@
 <?php
 require_once('config.php');
 
-if (isset($_GET['login'])) {
-  $login = $_GET['login'];
+if (isset($_POST['login'])) {
+  $login = $_POST['login'];
 }
-if (isset($_GET['nom'])) {
-  $nom = $_GET['nom'];
+if (isset($_POST['nom'])) {
+  $nom = $_POST['nom'];
 }
-if (isset($_GET['prenom'])) {
-  $prenom = $_GET['prenom'];
+if (isset($_POST['prenom'])) {
+  $prenom = $_POST['prenom'];
 }
-if (isset($_GET['sexe'])) {
-  $sexe = $_GET['sexe'];
+if (isset($_POST['sexe'])) {
+  $sexe = $_POST['sexe'];
 }
-if (isset($_GET['date_naissance'])) {
-  $date_naissance = $_GET['date_naissance'];
+if (isset($_POST['date_naissance'])) {
+  $date_naissance = $_POST['date_naissance'];
 }
 
 $requete = "INSERT INTO Utilisateur (login, nom, prenom, sexe, date_naissance) VALUES ('${login}', '${nom}', '${prenom}', '${sexe}', '${date_naissance}');";
