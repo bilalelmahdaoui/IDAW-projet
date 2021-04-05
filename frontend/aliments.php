@@ -40,7 +40,7 @@ require_once('header.php');
     </div>
   </div>
 
-  <div class="form-container">
+  <div id="crudAlimentsForm" onsubmit="onFormSubmit();" class="form-container">
     <form class="aliments-form">
       <div class="form-group">
         <label for="nom_aliment">Nom de l'aliment</label>
@@ -70,7 +70,7 @@ require_once('header.php');
   </div>
 
   <div class="container-table100">
-    <table class="table">
+    <table class="table" id="table_aliments">
       <thead class="thead-light">
         <tr>
           <th scope="col">#</th>
@@ -83,71 +83,10 @@ require_once('header.php');
           </th>
           <th scope="col">Glucides <div class="tab-subtitle">(kCal/100mg)</div>
           </th>
-          <th scope="col">Edit</th>
+          <th scope="col"></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Aliment 1</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/edit.svg' />
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Aliment 2</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/edit.svg' />
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Aliment 3</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/edit.svg' />
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Aliment 4</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/edit.svg' />
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Aliment 5</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/edit.svg' />
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 
@@ -158,6 +97,7 @@ require_once('header.php');
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/script.js"></script>
 
 
 </body>
