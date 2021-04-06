@@ -4,7 +4,9 @@ require_once('config.php');
 $requete = "SELECT * FROM Utilisateur;";
 $result = $mysqli->query($requete);
 
-if (isset($_POST['login']) && isset($_POST['password'])) {
+if (isset($_SESSION['login'])) {
+  $successfullyLogged = true;
+} else if (isset($_POST['login']) && isset($_POST['password'])) {
   $tryLogin = $_POST['login'];
   $tryPwd = $_POST['password'];
   while ($row = $result->fetch_assoc()) {

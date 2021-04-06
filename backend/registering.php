@@ -14,7 +14,6 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 
   if ($userAdded) {
     registrationSucceeded($frontendurl, $tryLogin);
-    //header("Refresh: 2; URL='login.php'");
   } else {
     $errorText = "Erreur! Merci d'esssayer avec autre login.";
     showRegistrationError($frontendurl, $errorText);

@@ -18,7 +18,7 @@ require_once('header.php');
           <a class="nav-link" href="journal.php"> Journal</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="aliments.php">Aliments
+          <a class="nav-link" href="aliments.php">
             <span class="sr-only">(current)</span>
           </a>
         </li>
