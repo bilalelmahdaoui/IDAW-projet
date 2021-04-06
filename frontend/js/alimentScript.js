@@ -20,7 +20,7 @@ function importData() {
       rowData = {};
     });
   });
-  getNextAlimentId();
+  //getNextAlimentId();
   console.log(nextId);
 }
 

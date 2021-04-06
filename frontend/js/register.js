@@ -1,27 +1,23 @@
 let backendurl = "http://localhost/IDAW-projet/backend/";
 let registerFormData = {};
 let nextId = null;
-let login = "bilalelmahdaoui";
+let newLogin = "";
 let user = {};
-$(document).ready(importData);
 
 function readRegisterForm() {
-  registerFormData.login = $("#login").val();
-  registerFormData.password = $("#password").val();
+  registerFormData.newLogin = $("#newLogin").val();
+  registerFormData.newPassword = $("#newPassword").val();
   registerFormData.nom = $("#nom").val();
   registerFormData.prenom = $("#prenom").val();
   registerFormData.sexe = $("#sexe").val();
+  registerFormData.date_naissance = $("#date_naissance").val();
   console.log(registerFormData);
 }
 
 function onRegisterSubmit() {
   event.preventDefault();
-  readLoginForm();
-  if (addUserToDb()) {
-    register();
-  } else {
-    displayRegistrationError();
-  }
+  readRegisterForm();
+  addUserToDb();
 }
 
 function addUserToDb() {
@@ -31,28 +27,29 @@ function addUserToDb() {
     dataType: "JSON",
     data:
       "login=" +
-      registerFormData.login +
+      registerFormData.newLogin +
       "&password=" +
-      registerFormData.password +
+      registerFormData.newPassword +
       "&nom=" +
       registerFormData.nom +
       "&prenom=" +
       registerFormData.prenom +
+      "&date_naissance=" +
+      registerFormData.date_naissance +
       "&sexe=" +
       registerFormData.sexe,
-    success: function (results) {
-      if (results.login == registerFormData.login) {
-        console.log("logged in!");
-        user = { ...results };
-        console.log({ user: user });
-      } else {
-        console.log("invalid credentials!");
-        user = {};
-      }
-      /*  if () console.log();
-      else console.log("hhhh"); */
+    success: function (error) {
+      if (!error) register();
+      else displayRegistrationError();
     },
   });
 }
 
-function displayRegistrationError() {}
+function register() {
+  console.log("registration");
+  s;
+}
+
+function displayRegistrationError() {
+  console.log("error");
+}

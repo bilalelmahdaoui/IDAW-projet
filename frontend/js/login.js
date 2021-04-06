@@ -3,7 +3,6 @@ let loginFormData = {};
 let nextId = null;
 let login = "bilalelmahdaoui";
 let user = {};
-$(document).ready(importData);
 
 function readLoginForm() {
   loginFormData.login = $("#login").val();
@@ -45,3 +44,7 @@ function validCredentials() {
 }
 
 function displayLoginError() {}
+
+function login() {
+  location.href = backendurl + "aliments.php";
+}

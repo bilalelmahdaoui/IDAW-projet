@@ -35,10 +35,10 @@
                 <input id="prenom" type="text" class="form-control rounded-left" placeholder="Prénom" required>
               </div>
               <div class="form-group">
-                <input id="date_naissance" type="date" class="form-control rounded-left" placeholder="Date de naissance" required>
+                <input id="nom" type="text" class="form-control rounded-left" placeholder="Nom" required>
               </div>
               <div class="form-group">
-                <input id="nom" type="text" class="form-control rounded-left" placeholder="Nom" required>
+                <input id="date_naissance" type="date" class="form-control rounded-left" placeholder="Date de naissance" required>
               </div>
               <div class="form-group">
                 <select class="form-control pl-3" id="sexe">
@@ -72,6 +72,7 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
 
 </body>
 

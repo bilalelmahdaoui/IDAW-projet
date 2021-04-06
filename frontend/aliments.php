@@ -23,7 +23,7 @@ require_once('header.php');
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="profile">Profile</a>
+          <a class="nav-link" href="http://localhost/IDAW-projet/backend/logout.php">Logout</a>
         </li>
       </ul>
     </div>
