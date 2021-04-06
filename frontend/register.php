@@ -39,7 +39,7 @@
                   </label>
                 </div> -->
                 <div class="w-100 text-md-right">
-                  <a href="login.html">Already have an account?</a>
+                  <a href="login.php">Already have an account?</a>
                 </div>
               </div>
               <div class="form-group">

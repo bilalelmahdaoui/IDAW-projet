@@ -5,7 +5,13 @@ if (isset($_POST['login'])) {
   $login = $_POST['login'];
 }
 
-$requete = "SELECT * FROM Utilisateur WHERE login='${login}';";
+if (isset($_POST['password'])) {
+  $password = $_POST['password'];
+}
+
+$requete = "SELECT login, password FROM Utilisateur WHERE login='${login}' AND password='${password}';";
+
+//echo $requete;
 
 $result = $mysqli->query($requete);
 $user = $result->fetch_assoc();
@@ -13,7 +19,7 @@ $user = $result->fetch_assoc();
 if ($user != null) {
   echo json_encode($user);
 } else {
-  echo "Pas d'utilisateurs";
+  echo "{}";
 }
 
 $mysqli->close();

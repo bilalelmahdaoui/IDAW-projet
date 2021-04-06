@@ -40,8 +40,8 @@ require_once('header.php');
     </div>
   </div>
 
-  <div id="crudAlimentsForm" onsubmit="onFormSubmit();" class="form-container">
-    <form class="aliments-form">
+  <div id="crudAlimentsForm" class="form-container">
+    <form class="aliments-form" onsubmit="onFormSubmit();">
       <div class="form-group">
         <label for="nom_aliment">Nom de l'aliment</label>
         <input type="text" class="form-control" id="nom_aliment" placeholder="Nom de l'aliment...">

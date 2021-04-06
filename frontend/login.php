@@ -5,9 +5,12 @@
 	<title>Login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -21,22 +24,22 @@
 							<span class="fa fa-user-o"></span>
 						</div>
 						<h3 class="text-center mb-4">Login</h3>
-						<form action="authenticate.php" class="login-form">
+						<form onsubmit="onLoginSubmit();" class="login-form">
 							<div class="form-group">
-								<input type="text" class="form-control rounded-left" placeholder="Username" required>
+								<input id="login" type="text" class="form-control rounded-left" placeholder="Username" required>
 							</div>
 							<div class="form-group d-flex">
-								<input type="password" class="form-control rounded-left" placeholder="Password" required>
+								<input id="password" type="password" class="form-control rounded-left" placeholder="Password" required>
 							</div>
 							<div class="form-group d-md-flex">
 								<div class="w-50">
 									<label class="checkbox-wrap checkbox-primary">Remember Me
-										<input type="checkbox" checked>
+										<input id="remember_me" type="checkbox" checked>
 										<span class="checkmark"></span>
 									</label>
 								</div>
 								<div class="w-50 text-md-right">
-									<a href="register.html">Register</a>
+									<a href="register.php">Register</a>
 								</div>
 							</div>
 							<div class="form-group">
@@ -53,8 +56,8 @@
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/login.js"></script>
 
-	
 </body>
 
 </html>

@@ -8144,13 +8144,13 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #8d448b; }
+  color: #353A3F; }
   a:hover, a:focus {
     text-decoration: none !important;
     outline: none !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #8d448b; }
+    color: #353A3F; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -8160,7 +8160,7 @@ h1, h2, h3, h4, h5,
   color: #000; }
 
 .bg-primary {
-  background: #8d448b !important; }
+  background: #353A3F !important; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -8190,11 +8190,11 @@ h1, h2, h3, h4, h5,
   .login-wrap h3 {
     font-weight: 700;
     font-size: 20px;
-    color: #8d448b; }
+    color: #353A3F; }
   .login-wrap .icon {
     width: 80px;
     height: 80px;
-    background: #8d448b;
+    background: #353A3F;
     border-radius: 50%;
     font-size: 30px;
     margin: 0 auto;
@@ -8292,9 +8292,9 @@ h1, h2, h3, h4, h5,
 
 /* Style the checkmark/indicator */
 .checkbox-primary {
-  color: #8d448b; }
+  color: #353A3F; }
   .checkbox-primary input:checked ~ .checkmark:after {
-    color: #8d448b; }
+    color: #353A3F; }
 
 .btn {
   cursor: pointer;
@@ -8305,20 +8305,20 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #8d448b !important;
-    border: 1px solid #8d448b !important;
+    background: #353A3F !important;
+    border: 1px solid #353A3F !important;
     color: #fff !important; }
     .btn.btn-primary:hover {
-      border: 1px solid #8d448b;
+      border: 1px solid #353A3F;
       background: transparent;
-      color: #8d448b; }
+      color: #353A3F; }
     .btn.btn-primary.btn-outline-primary {
-      border: 1px solid #8d448b;
+      border: 1px solid #353A3F;
       background: transparent;
-      color: #8d448b; }
+      color: #353A3F; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #8d448b;
+        background: #353A3F;
         color: #fff; }
 
 .form-group {
