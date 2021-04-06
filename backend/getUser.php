@@ -9,7 +9,7 @@ if (isset($_POST['password'])) {
   $password = $_POST['password'];
 }
 
-$requete = "SELECT login, password FROM Utilisateur WHERE login='${login}' AND password='${password}';";
+$requete = "SELECT * FROM Utilisateur WHERE login='${login}' AND password='${password}';";
 
 //echo $requete;
 

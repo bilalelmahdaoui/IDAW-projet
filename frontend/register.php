@@ -24,12 +24,28 @@
               <span class="fa fa-user-o"></span>
             </div>
             <h3 class="text-center mb-4">Register</h3>
-            <form action="#" class="login-form">
+            <form onsubmit="onRegisterSubmit();" class="login-form">
               <div class="form-group">
-                <input type="text" class="form-control rounded-left" placeholder="Username" required>
+                <input id="login" type="text" class="form-control rounded-left" placeholder="Username" required>
               </div>
               <div class="form-group d-flex">
-                <input type="password" class="form-control rounded-left" placeholder="Password" required>
+                <input id="password" type="password" class="form-control rounded-left" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <input id="prenom" type="text" class="form-control rounded-left" placeholder="Prénom" required>
+              </div>
+              <div class="form-group">
+                <input id="date_naissance" type="date" class="form-control rounded-left" placeholder="Date de naissance" required>
+              </div>
+              <div class="form-group">
+                <input id="nom" type="text" class="form-control rounded-left" placeholder="Nom" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control pl-3" id="sexe">
+                  <option value="" disabled selected>Sexe</option>
+                  <option value="Femme">Femme</option>
+                  <option value="Homme">Homme</option>
+                </select>
               </div>
               <div class="form-group d-md-flex">
                 <!-- <div class="w-50">
