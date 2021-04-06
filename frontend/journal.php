@@ -41,15 +41,10 @@ require_once('header.php');
   </div>
 
   <div class="form-container">
-    <form class="aliments-form">
+    <form class="aliments-form" onsubmit="onFormSubmit();">
       <div class="form-group">
         <label for="select_aliment">Nom de l'aliment</label>
         <select class="form-control pl-3" id="select_aliment">
-          <option>Aliment 1</option>
-          <option>Aliment 2</option>
-          <option>Aliment 3</option>
-          <option>Aliment 4</option>
-          <option>Aliment 5</option>
         </select>
       </div>
 
@@ -62,81 +57,22 @@ require_once('header.php');
   </div>
 
   <div class="container-table100">
-    <table class="table">
+    <table class="table" id="table_journal">
       <thead class="thead-light">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Aliment</th>
-          <th scope="col">Calories <div class="tab-subtitle">(kCal/100mg)</div>
-          </th>
-          <th scope="col">Eau <div class="tab-subtitle">(kCal/100mg)</div>
-          </th>
-          <th scope="col">Protéines <div class="tab-subtitle">(kCal/100mg)</div>
-          </th>
-          <th scope="col">Glucides <div class="tab-subtitle">(kCal/100mg)</div>
-          </th>
+          <th scope="col">Date</th>
           <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Aliment 1</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Aliment 2</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Aliment 3</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Aliment 4</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Aliment 5</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>16</td>
-          <td>
-            <img class="crud-icon" src='/IDAW-projet/images/delete.svg' />
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
+  </th>
+  <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
+</div>
 </div>
 
 
@@ -150,6 +86,7 @@ require_once('header.php');
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/journalScript.js"></script>
 
 
 </body>

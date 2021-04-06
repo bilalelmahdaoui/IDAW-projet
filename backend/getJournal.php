@@ -7,7 +7,7 @@ if (isset($_POST['login'])) {
 
 $login = 'bilalelmahdaoui';
 
-$requete = "SELECT nom_aliment, date FROM Consommer, Aliment WHERE Consommer.id_aliment = Aliment.id_aliment AND login = '${login}';";
+$requete = "SELECT Aliment.id_aliment, nom_aliment, date FROM Consommer, Aliment WHERE Consommer.id_aliment = Aliment.id_aliment AND login = '${login}';";
 $result = $mysqli->query($requete);
 $results = [];
 

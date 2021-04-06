@@ -1,6 +1,7 @@
 let backendurl = "http://localhost/IDAW-projet/backend/";
 let selectedRow = null;
 let formData = {};
+let nextId = null;
 $(document).ready(importData);
 
 function importData() {
@@ -19,8 +20,26 @@ function importData() {
       rowData = {};
     });
   });
+  getNextAlimentId();
+  console.log(nextId);
 }
 
+/* function getNextAlimentId() {
+  nextData = {};
+  $.ajax({
+    url: backendurl + "getNextAlimentID.php",
+    type: "get",
+    dataType: "JSON",
+    success: function (response) {
+      nextData.nextId = response.max_aliment_id;
+    },
+  });
+  if (nextData != null) {
+    console.log(JSON.stringify(nextData));
+    //console.log(nextData.nextId);
+  }
+}
+ */
 function readForm() {
   formData.nom_aliment = $("#nom_aliment").val();
   formData.calories = $("#calories").val();

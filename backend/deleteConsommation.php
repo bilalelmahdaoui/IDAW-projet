@@ -8,7 +8,7 @@ if (isset($_POST['id_aliment'])) {
   $id_aliment = $_POST['id_aliment'];
 }
 
-$requete = "DELETE FROM Consommer WHERE id_aliment = ${id_aliment} AND login = ${login};";
+$requete = "DELETE FROM Consommer WHERE id_aliment = ${id_aliment} AND login = '${login}';";
 echo $requete;
 
 if (!$mysqli->query($requete)) {
