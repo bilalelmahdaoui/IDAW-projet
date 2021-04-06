@@ -24,24 +24,24 @@
               <span class="fa fa-user-o"></span>
             </div>
             <h3 class="text-center mb-4">Register</h3>
-            <form onsubmit="onRegisterSubmit();" class="login-form">
+            <form action="http://localhost/IDAW-projet/backend/registering.php" method="POST" class="login-form">
               <div class="form-group">
-                <input id="login" type="text" class="form-control rounded-left" placeholder="Username" required>
+                <input id="login" name="login" type="text" class="form-control rounded-left" placeholder="Username" required>
               </div>
               <div class="form-group d-flex">
-                <input id="password" type="password" class="form-control rounded-left" placeholder="Password" required>
+                <input id="password" name="password" type="password" class="form-control rounded-left" placeholder="Password" required>
               </div>
               <div class="form-group">
-                <input id="prenom" type="text" class="form-control rounded-left" placeholder="Prénom" required>
+                <input id="prenom" name="prenom" type="text" class="form-control rounded-left" placeholder="Prénom" required>
               </div>
               <div class="form-group">
-                <input id="nom" type="text" class="form-control rounded-left" placeholder="Nom" required>
+                <input id="nom" name="nom" type="text" class="form-control rounded-left" placeholder="Nom" required>
               </div>
               <div class="form-group">
-                <input id="date_naissance" type="date" class="form-control rounded-left" placeholder="Date de naissance" required>
+                <input id="date_naissance" name="date_naissance" type="date" class="form-control rounded-left" placeholder="Date de naissance" required>
               </div>
               <div class="form-group">
-                <select class="form-control pl-3" id="sexe">
+                <select class="form-control pl-3" id="sexe" name="sexe">
                   <option value="" disabled selected>Sexe</option>
                   <option value="Femme">Femme</option>
                   <option value="Homme">Homme</option>

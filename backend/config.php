@@ -3,6 +3,7 @@ $servername = 'localhost';
 $username = 'bilalelmahdaoui';
 $password = 'helloworld';
 $dbname = 'idaw_projet';
+$frontendurl = 'http://localhost/IDAW-projet/frontend/';
 
 $mysqli = mysqli_connect($servername, $username, $password, $dbname);
 
