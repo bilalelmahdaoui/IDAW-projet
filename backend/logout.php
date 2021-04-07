@@ -8,4 +8,4 @@ if (isset($_SESSION['login'])) {
   echo "<h1>Error! You're not even logged in.</h1>";
 }
 echo "<h2>Redirecting...</h2>";
-header("Refresh: 2; URL='http://localhost/IDAW-projet/frontend/login.php'");
+header("Location: http://localhost/IDAW-projet/frontend/login.php");
