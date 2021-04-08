@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 07, 2021 at 08:16 AM
+-- Generation Time: Apr 08, 2021 at 10:14 PM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.12
 
@@ -159,14 +159,9 @@ CREATE TABLE `Utilisateur` (
 
 INSERT INTO `Utilisateur` (`login`, `password`, `nom`, `prenom`, `sexe`, `date_naissance`) VALUES
 ('bilalelmahdaoui', 'helloworld', 'Bilal', 'El Mahdaoui', 'Homme', '1999-11-26'),
-('bilalelmahdaouii', 'helloworld', 'jj', 'hh', 'Homme', '2021-04-02'),
-('bilalelmahdaouiii', 'helloworld', 'h', 'g', 'null', '2021-04-10'),
-('dsqddsq', 'helloworld', 'sdf', 'bilalfd', 'Homme', '2021-04-02'),
-('helloooooo', 'hiiiii', 'hii', 'hello', 'Homme', '2021-04-02'),
-('hiworldddd', 'helloworld', 'taml', 'said', 'Femme', '2021-04-16'),
-('nawfalelmahdaoui', 'hiworld', 'elmahdaoui', 'nawfal', 'Homme', '1998-10-23'),
-('saidox', 'hhhhh', 'zaml', 'said', 'Femme', '2021-04-04'),
-('undefined', 'undefined', 'ggf', 'mk', 'Femme', '2021-04-16');
+('helloworld', 'helloworld', 'World', 'Hello', 'Femme', '2021-04-23'),
+('hiworld', 'helloworld', 'World', 'Hi', 'Homme', '2021-04-16'),
+('lucfabresse', 'helloworld', 'Fabresse', 'Luc', 'Homme', '1993-04-17');
 
 --
 -- Indexes for dumped tables
