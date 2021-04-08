@@ -5,6 +5,10 @@ if (isset($_POST['login'])) {
   $login = $_POST['login'];
 }
 
+if (isset($_SESSION['login'])) {
+  $login = $_SESSION['login'];
+}
+
 $login = 'bilalelmahdaoui';
 
 $requete = "SELECT Aliment.id_aliment, nom_aliment, date FROM Consommer, Aliment WHERE Consommer.id_aliment = Aliment.id_aliment AND login = '${login}';";

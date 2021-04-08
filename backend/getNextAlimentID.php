@@ -5,6 +5,10 @@ if (isset($_POST['login'])) {
   $login = $_POST['login'];
 }
 
+if (isset($_SESSION['login'])) {
+  $login = $_SESSION['login'];
+}
+
 $requete = "SELECT MAX(id_aliment) as max_aliment_id FROM `Aliment`;";
 
 $result = $mysqli->query($requete);

@@ -5,7 +5,6 @@ let login = "bilalelmahdaoui";
 $(document).ready(importData);
 
 function importData() {
-  console.log("ready");
   rowData = {};
   $.ajax({
     url: backendurl + "getJournal.php",
@@ -70,7 +69,6 @@ function readForm() {
   formData.select_aliment = $("#select_aliment option:selected").text();
   formData.date = $("#date").val();
   formData.id_aliment = $("#select_aliment").val();
-  console.log(formData);
 }
 
 function insertSelectData(id_aliment, nom_aliment) {
@@ -107,8 +105,6 @@ function onDeleteRow(td) {
     let table = document.getElementById("table_journal");
     rowIndex = td.parentElement.parentElement.rowIndex;
     id_aliment = table.rows[rowIndex].cells[0].innerHTML;
-
-    console.log("onDeleteRow | id_aliment = " + id_aliment);
     deleteAlimentAjax(id_aliment);
     document.getElementById("table_journal").deleteRow(rowIndex);
     resetForm();
@@ -144,6 +140,5 @@ function onFormSubmit() {
   readForm();
   insertData(formData);
   addAlimentAjax();
-  console.log("added!");
   resetForm();
 }

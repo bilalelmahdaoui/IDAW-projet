@@ -5,7 +5,6 @@ let nextId = null;
 $(document).ready(importData);
 
 function importData() {
-  console.log("hello");
   rowData = {};
   $.get(backendurl + "getAliments.php", function (dbAliments) {
     results = JSON.parse(dbAliments);
@@ -21,7 +20,6 @@ function importData() {
     });
   });
   //getNextAlimentId();
-  console.log(nextId);
 }
 
 /* function getNextAlimentId() {
@@ -46,7 +44,6 @@ function readForm() {
   formData.eau = $("#eau").val();
   formData.proteines = $("#proteines").val();
   formData.glucides = $("#glucides").val();
-  console.log(formData);
 }
 
 function insertData(data) {
@@ -98,9 +95,6 @@ function updateRow() {
   let table = document.getElementById("table_aliments");
   rowIndex = selectedRow.rowIndex;
   id_aliment = table.rows[rowIndex].cells[0].innerHTML;
-
-  console.log("updateRow | id_aliment = " + id_aliment);
-  console.log(formData);
   updateAlimentAjax(id_aliment);
 
   selectedRow.cells[1].innerHTML = formData.nom_aliment;
@@ -136,8 +130,6 @@ function onDeleteRow(td) {
     let table = document.getElementById("table_aliments");
     rowIndex = td.parentElement.parentElement.rowIndex;
     id_aliment = table.rows[rowIndex].cells[0].innerHTML;
-
-    console.log("onDeleteRow | id_aliment = " + id_aliment);
     deleteAlimentAjax(id_aliment);
     document.getElementById("table_aliments").deleteRow(rowIndex);
     resetForm();
@@ -176,11 +168,9 @@ function onFormSubmit() {
   event.preventDefault();
   readForm();
   if (selectedRow == null) {
-    console.log("added!");
     insertData(formData);
     addAlimentAjax();
   } else {
-    console.log("edited!");
     updateRow();
   }
   resetForm();

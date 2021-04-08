@@ -10,7 +10,7 @@ if (isset($_POST['nom_aliment'])) {
 if (isset($_POST['calories'])) {
   $calories = $_POST['calories'];
 }
-if (isset($_POST['eau'])) {
+if (isset($_POST['eau'])) { 
   $eau = $_POST['eau'];
 }
 if (isset($_POST['proteines'])) {

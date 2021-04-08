@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Register</title>
+  <title>iMangerMieux | S'inscrire</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,7 +23,7 @@
             <div class="icon d-flex align-items-center justify-content-center">
               <span class="fa fa-user-o"></span>
             </div>
-            <h3 class="text-center mb-4">Register</h3>
+            <h3 class="text-center mb-4">Créer son compte</h3>
             <form action="http://localhost/IDAW-projet/backend/registering.php" method="POST" class="login-form">
               <div class="form-group">
                 <input id="login" name="login" type="text" class="form-control rounded-left" placeholder="Username" required>
@@ -55,11 +55,11 @@
                   </label>
                 </div> -->
                 <div class="w-100 text-md-right">
-                  <a href="login.php">Already have an account?</a>
+                  <a href="login.php">Avez vous déjà un compte?</a>
                 </div>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary rounded submit p-3 px-5">Register</button>
+                <button type="submit" class="btn btn-primary rounded submit p-3 px-5">S'inscrire</button>
               </div>
             </form>
           </div>

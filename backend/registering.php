@@ -33,13 +33,14 @@ function showRegistrationError($frontendurl, $errorText)
           </ul>
         </nav>";
   echo "<h2>Redirecting...</h2>";
+  require_once("http://localhost/IDAW-projet/frontend/infos.php");
+  showinfos();
   header("Refresh: 2; URL='${frontendurl}/register.php'");
 }
 
 function registrationSucceeded($frontendurl, $login)
 {
-  echo "<h1>Votre Compte '" . $login . "' a été créé avec succès!</h1>";
-  echo "<h2>Redirecting...</h2>";
+  require_once("http://localhost/IDAW-projet/frontend/account_created.php");
   header("Refresh: 2; URL='${frontendurl}/login.php'");
 }
 
